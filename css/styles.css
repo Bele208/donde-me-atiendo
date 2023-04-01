@@ -5,8 +5,15 @@
     box-sizing: content-box;
 }
 
+html{
+    height: 100%;
+}
+
 body{
     font-family: 'Nunito Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 /*HEADER*/
@@ -46,7 +53,7 @@ figure img{
     cursor: pointer;
     height: 20px;
     margin-right: 10px ;
-    margin-top: 10px;
+    margin-top: 20px;
     border: 1px solid #026181;
     padding: 5px;
     border-radius: 10px;
@@ -93,7 +100,7 @@ a:hover{
     display: flex;
 }
 #buscador{
-    margin: 10px 25px;
+    margin: 0px 25px;
 }
 label>input{
     padding-left: 4px;
@@ -198,3 +205,47 @@ form{
     justify-content: space-between;
 }     
 
+
+/* card hospital */
+.contenedor-hospital{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    box-shadow: 0 0 20px 0;
+    height: 400px;
+    width: 300px;
+}
+
+.contenedor-hospital{
+    text-align: center;
+}
+
+.contenedor-hospital img{
+    margin: 2px;
+    width: 98% ;
+    height: 140px;
+}
+
+#hospitales{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.titulo{
+   height: 100px;
+}
+
+/* Ocultar/mostrar tarjetas */
+.item:nth-child(n+7) {
+    display: none;
+  }
+
+#show-more{
+    border-radius: 5px;
+    width: 100px;
+    margin: 20px 0px 20px 46%;
+}
