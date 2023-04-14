@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 
 {% block title %}
     ¿Dónde me atiendo?
@@ -10,15 +10,15 @@
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./img/img-1.jpg" class="d-block w-100" alt="...">
+                <img src="{% static 'img/img-1.jpg' %}" class="d-block w-100" alt="...">
                 <p>¿Necesitás saber en qué hospital atenderte?</p>
             </div>
             <div class="carousel-item">
-                <img src="./img/img-2.jpg" class="d-block w-100" alt="...">
+                <img src="{% static 'img/img-2.jpg' %}" class="d-block w-100" alt="...">
                 <p>Accedé a toda la información importante.</p>
             </div>
             <div class="carousel-item">
-                <img src="./img/img-3.jpg" class="d-block w-100" alt="...">
+                <img src="{% static 'img/img-3.jpg' %}" class="d-block w-100" alt="...">
                 <p>Hospitales de guardia, teléfonos y cómo llegar.</p>
             </div>
         </div>
