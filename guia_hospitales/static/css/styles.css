@@ -1,0 +1,200 @@
+/*REGLAS GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+/*HEADER*/
+header{
+    border-bottom: 1px solid ;
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    background-color: #ffffff;
+    height: 80px;
+}
+
+#titulo-logo{
+    margin: 6px 0px 0px 0px;
+    font-family: 'Alkatra', cursive;
+}
+
+#titulo-logo h1{
+    font-size: 30px;
+}
+
+#titulo-logo h4{
+    font-size: 17px;
+}
+#logo-general{
+    display: flex;
+}
+
+figure img{
+    /* filter: invert(100%) sepia(0%) saturate(7450%) hue-rotate(286deg) brightness(110%) contrast(106%); */
+    margin-top: 10px;
+    height: 60px;
+}
+
+#abrir-ventana{
+    font-size: 14px;
+    cursor: pointer;
+    height: 20px;
+    margin-right: 10px ;
+    margin-top: 10px;
+    border: 1px solid #026181;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#user{
+    margin: 0px 6px 0px 6px;
+}
+
+/*MENÚ DE NAVEGACIÓN*/
+nav>ul{
+    display: flex;
+    justify-content: center;
+}
+
+nav a{ 
+    font-weight: bold;
+    padding: 5px 20px ;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px; 
+} 
+#nav{
+    border-bottom: 1px solid #ffffff;
+    height: 45px;
+    background-color: #0096C7;
+}   
+
+nav li{
+    margin: 10px 3px;
+    list-style: none;
+}
+
+a:hover{
+
+    color: #000000;
+    background-color: #ffffff;
+}
+
+
+/* BUSCADOR*/
+
+#lateral-derecho{
+    display: flex;
+}
+#buscador{
+    margin: 10px 25px;
+}
+label>input{
+    padding-left: 4px;
+    border-radius: 6px;
+    width: 250px;
+    height: 30px;
+}
+
+#buscador button{
+    padding: 3px 6px;
+    border-radius: 6px;
+}
+
+/* CARROUSEL */
+.carousel-item img{
+    height: 500px;
+    width: 200%;
+    object-fit:cover;
+}
+.carousel-item p{
+    text-align: center;
+    font-weight: bold;
+    padding: .5rem;
+    border-radius: 0.8rem;
+    background-color:hsla(192, 2%, 47%, 0.308) ;
+    font-size: 2.5rem;
+    color:#fff ;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+}
+
+/* TELÉFONOS ÚTILES */
+.container-number{
+    width: 80%;
+}
+
+#title-tel{
+    text-align: center;
+}
+
+#section-tel{
+    padding: 8px;
+}
+
+#section-tel article{
+    padding: 15px;
+    width: 70%;
+}
+
+/* CONTACTO */
+#section-form p{
+    font-size: 20px;
+    text-align: center;
+}
+#section-form h3{
+    margin-top: 10px;
+    text-align: center;
+}
+form{
+    padding: 20px;
+}
+.form{
+    background-color: #ffffff;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    width: 300px;
+}
+.form input,textarea{
+    background-color: #eeebee;
+}
+
+.form textarea{
+    resize:none;
+}
+
+#buttom{
+    padding: 3px 10px;
+    border-radius: 4px;
+}
+
+#align-button{
+    display: flex;
+    justify-content: end;
+}
+
+#buttom:hover{
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #0096C7;
+}
+
+
+/* FOOTER */
+.footer{
+    padding: 0 10px 0 10px;
+    border-top: 1px solid #000000;
+    display: flex;
+    justify-content: space-between;
+}     
+
