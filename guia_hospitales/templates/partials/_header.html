@@ -1,0 +1,37 @@
+<header>
+    <div id="logo-general">
+        <figure>
+            <img src="./img/logo-black.png" alt="">
+        </figure>
+
+        <div id="titulo-logo">
+            <h1>¿Dónde me atiendo?</h1>
+            <h4>Guía de hospitales públicos de CABA</h4>
+        </div>
+    </div>
+    <div id="lateral-derecho">
+        <div>
+            <form id="buscador">
+                <label >
+                    <input type="search" name="search" id="search" placeholder="Buscar hospital...">
+                </label>
+                <button id="enviar">Buscar</button>   
+            </form>
+        </div>
+
+        <div id="login">
+            <button id="abrir-ventana"><i class="fa-solid fa-user" id="user"></i>Accedé a tu cuenta</button>
+        </div>
+
+    </div>
+
+</header>
+
+<nav id="nav">
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#hospitales">Hospitales</a></li>
+        <li><a href="{% url 'telefonos' %}">Telefonos útiles</a></li>
+        <li><a href="{% url 'contacto' %}">Contacto</a></li>
+    </ul>
+</nav>

@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+    Contacto
+{% endblock title %}
+
+
+{% block section %}
+    <section id="section-form">
+        <h3>Contáctanos</h3>
+        <p>Si deseas comunicarte con nosotros para sugerir algo
+            respecto a la información aquí brindada, <br> no dudes en hacerlo
+            a través del siguiente formulario.
+        </p>
+        <div class="form">
+            <form>
+                <label class="label">
+                    <span>Nombre</span>
+                    <input class="section-form" type="text" name="name" id="name" required>
+                </label>
+                <label class="label">
+                    <span>Email</span>
+                    <input class="section-form" type="email" name="email" id="email" required>
+                </label>
+                <label class="label">
+                    <span>Mensaje</span>
+                    <textarea class="section-form" name="mensaje" id="mensaje" cols="30" rows="5" required></textarea>
+                </label>
+                <div id="align-button">
+                    <button id="buttom">Submit</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+{% endblock section %}
+    
+    
