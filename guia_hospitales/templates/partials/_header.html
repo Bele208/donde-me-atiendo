@@ -1,7 +1,8 @@
+{% load static %}
 <header>
     <div id="logo-general">
         <figure>
-            <img src="./img/logo-black.png" alt="">
+            <img src="{% static 'img/logo-black.png' %}" alt="">
         </figure>
 
         <div id="titulo-logo">
@@ -29,8 +30,8 @@
 
 <nav id="nav">
     <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#hospitales">Hospitales</a></li>
+        <li><a href="{% url 'index' %}">Inicio</a></li>
+        <li><a href="{% url 'index' %}#hospitales">Hospitales</a></li>
         <li><a href="{% url 'telefonos' %}">Telefonos útiles</a></li>
         <li><a href="{% url 'contacto' %}">Contacto</a></li>
     </ul>
